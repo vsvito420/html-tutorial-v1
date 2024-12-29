@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>HTML Tutorial</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="node_modules/prismjs/themes/prism-tomorrow.css" />
+    <script src="node_modules/prismjs/prism.js"></script>
+    <script type="module" src="js/tutorial-page.js"></script>
+  </head>
+  <body data-tutorial-type="html">
+    <nav>
+      <a href="/">Startseite</a>
+      <a href="/html.html" aria-current="page">HTML Tutorial</a>
+      <a href="/css.html">CSS Tutorial</a>
+    </nav>
+
+    <h1>HTML Grundlagen</h1>
+
+    <div class="tutorial-content">
+      <h2 id="exampleTitle"></h2>
+      <p id="exampleDescription" class="description"></p>
+
+      <div class="tutorial-navigation">
+        <button id="prevExample" class="nav-button">&larr; Vorheriges</button>
+        <span id="exampleCounter">Beispiel 1 von 5</span>
+        <button id="nextExample" class="nav-button">Nächstes &rarr;</button>
+      </div>
+
+      <div class="split-container">
+        <div class="code-section">
+          <h3>Code</h3>
+          <pre><code class="language-html" id="codeBlock"></code></pre>
+          <div class="explanation" id="explanation"></div>
+        </div>
+
+        <div class="preview-section">
+          <h3>Ergebnis</h3>
+          <div class="preview-box" id="previewBox"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
